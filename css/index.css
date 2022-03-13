@@ -195,6 +195,20 @@ h3{
     align-items: center;
 }
 
+.card-row{
+
+}
+.card-column{
+    width: 100%;
+    border-radius:10px;
+    background-color: white;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    padding: 1px;
+}
+
+
 
   
 /**********************/
