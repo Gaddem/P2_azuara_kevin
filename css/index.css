@@ -158,11 +158,62 @@ h3{
     padding-left: 10px;
    
 }
+/**********************/
+    /* Main */
+/**********************/
+
+.top-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 3%;
+    margin-top: 20px;
+    
+}
+.top-left-main{
+    width: 40%;
+    margin-right: 2%;
+}
+.top-right-main{
+
+    width: 18%;
+}
+
+.div-rad{
+    background-color: #F2F2F2;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    height: 200px;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.space-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-row{
+
+}
+.card-column{
+    width: 100%;
+    border-radius:10px;
+    background-color: white;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    padding: 1px;
+}
+
+
 
   
-
-
-
+/**********************/
+    /* Footer */
+/**********************/
 
 footer{
     position: fixed;
