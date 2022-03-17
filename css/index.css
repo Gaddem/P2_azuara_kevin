@@ -44,16 +44,18 @@ p{
     border-top: 2px solid #0065FC;
     color:#0065FC;
 }
+
 h3{
     padding: 0;
     margin-top: 20px;
     margin-bottom:2px;
+    font-weight:bolder;
 }
 .subtitle{
     font-weight: 400;
     font-size: 12px;
     margin-bottom: 12px;
-    margin-top: 3px;
+    margin-top: 5px;
     display: flex;
 }
 .button-search{
@@ -70,12 +72,15 @@ h3{
     margin: 0;
 }
 
+
 .input-search{
     height: 31px;
     width: 160px;
     margin: 0;
     border: 1px solid lightgray ;
     padding-left: 8px;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
 }
 .input-form{
     display: flex; 
@@ -100,26 +105,40 @@ h3{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
+
+.shadow-drop-2-center:hover {
+	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            
+}
+
+.slide-fwd-center:hover::before {
+	-webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 .item-filter{
     display: flex;
     align-items: center;
     flex-direction: row;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 10px;     
     padding-right: 10px;
     border-radius: 20px;
     border:2px solid lightgray;
     height: 30px;
     border-left: none;
+    background-color: white;
 }
 .box-icon-filter{
     
     left: 60px;
     border-radius: 50%;
-    height: 37px;
-    width: 37px;
+    height:  33.8px;
+    width: 33.8px;
     background-color: #DEEBFF;
     margin-right: 10px;
     display: flex;
@@ -195,9 +214,7 @@ h3{
     align-items: center;
 }
 
-.card-row{
 
-}
 .card-column{
     width: 100%;
     border-radius:10px;
@@ -234,3 +251,57 @@ footer{
     margin-right: 4%;
     margin-left: 7%;
 }
+
+
+
+
+ @-webkit-keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  @keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  
+@-webkit-keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+  @keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+  
