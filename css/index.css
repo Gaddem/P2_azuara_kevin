@@ -59,7 +59,7 @@ h3{
 }
 .subtitle{
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     margin-bottom: 12px;
     margin-top: 5px;
     display: flex;
@@ -72,32 +72,35 @@ h3{
     border: none;
     background-color: #0065FC ;
     color: white;
-    height:35px;
-    padding-left: 10px;
-    padding-right: 10px;
+    height: 110%;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 
 .input-search{
-    height: 31px;
-    width: 170px;
+    height: 100%;
+    width: 190px;
     margin: 0;
     border: 1px solid #F2F2F2 ;
     padding-left: 8px;
     font-weight: 900;
     font-family: 'Raleway', sans-serif;
-    padding-left: 12px;
+    font-size: 15px;
+    padding-left: 14px;
 }
 .input-form{
     display: flex; 
     align-items: center;
+    height: 40px;
+    margin-top: 15px;
 }
 .bloc_icon-search{
-    height: 35px;
+    height: 110%;
     background-color:#F2F2F2;
     width: 36px;
     border-top-left-radius: 9px;
@@ -107,7 +110,7 @@ h3{
     justify-content: center;
 }
 .icon-search{
-    height: 12px;
+    height: 15px;
     
 }
 
@@ -134,8 +137,8 @@ h3{
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-left: 8px;
-    margin-right: 8px;     
+    margin-left: 10px;
+    margin-right: 10px;     
     padding-right: 4px;
     border-radius: 20px;
     border:2px solid lightgray;
