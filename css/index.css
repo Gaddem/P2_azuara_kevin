@@ -15,9 +15,13 @@ nav {
 .marg-l {
   margin-left: 3%;
 }
-.blue-fonc-color{
+.blue-fonc-color {
   color: #0065fc;
 }
+.txt-14 {
+  font-size: 14px;
+}
+
 
 /**********************/
 /* Header */
@@ -46,7 +50,11 @@ nav {
   padding-right: 3em;
 }
 
-.link:hover {
+.link:focus {
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
+}
+link:hover {
   border-top: 2px solid #0065fc;
   color: #0065fc;
 }
@@ -141,7 +149,7 @@ h3 {
   border: 2px solid lightgray;
   border-left: none;
   background-color: white;
-  cursor:pointer;
+  cursor: pointer;
 }
 .box-icon-filter {
   left: 60px;
@@ -223,7 +231,7 @@ h3 {
 
 .title-top-left {
   font-size: 18px;
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 .card-column {
   width: 100%;
@@ -401,9 +409,6 @@ footer {
   margin-left: 15%;
 }
 
-.txt-14 {
-  font-size: 14px;
-}
 
 /***********************************/
 /* Web-kit pour animations */
