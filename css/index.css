@@ -13,7 +13,8 @@ nav {
 }
 
 .marg-l {
-  margin-left: 3%;
+  margin-left: 4%;
+  /* margin-right: 3%; */
 }
 .blue-fonc-color {
   color: #0065fc;
@@ -21,7 +22,6 @@ nav {
 .txt-14 {
   font-size: 14px;
 }
-
 
 /**********************/
 /* Header */
@@ -50,11 +50,8 @@ nav {
   padding-right: 3em;
 }
 
+.link:hover,
 .link:focus {
-  border-top: 2px solid #0065fc;
-  color: #0065fc;
-}
-link:hover {
   border-top: 2px solid #0065fc;
   color: #0065fc;
 }
@@ -105,6 +102,7 @@ h3 {
   align-items: center;
   height: 40px;
   margin-top: 15px;
+  max-width: 90%;
 }
 .bloc_icon-search {
   height: 110%;
@@ -121,11 +119,23 @@ h3 {
 }
 
 .form-filter {
-  display: flex;
-  align-items: center;
+  display: inline-flex;
   margin-top: 20px;
   margin-bottom: 10px;
-  gap: 25px;
+  width: 95%; 
+}
+@media only screen and (max-width:991px) {
+  .form-filter-col{
+    flex-direction: column;
+  }
+} 
+
+.div-item-filter{
+  gap: 10px;
+  align-items: center;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .shadow-drop-2-center:hover {
@@ -141,6 +151,7 @@ h3 {
 }
 
 .item-filter {
+  /* width: 100px; */
   height: 30px;
   display: flex;
   align-items: center;
@@ -152,15 +163,16 @@ h3 {
   cursor: pointer;
 }
 .box-icon-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: 60px;
   border-radius: 50%;
   height: 41.3px;
   width: 41.3px;
   background-color: #deebff;
   margin-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ 
 }
 .title-filter {
   display: flex;
@@ -200,7 +212,7 @@ h3 {
 .top-left-main {
   flex-direction: column;
   display: flex;
-  width: 50%;
+  width: 60%;
   margin-right: 2%;
 }
 .top-right-main {
@@ -209,7 +221,7 @@ h3 {
 .wrap-flex {
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 15px;
 }
 .wrap-col {
   display: inline-flex;
@@ -245,8 +257,8 @@ h3 {
 .card {
   background-color: white;
   display: flex;
-  width: 28.5%;
-  height: 190px;
+  width: 30%;
+  height: 130px;
   font-size: 12px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
@@ -257,7 +269,7 @@ h3 {
   display: flex;
   width: 100%;
   height: 140px;
-  font-size: 12px;
+  font-size: 8px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   padding: 3px 3px 3px 3px;
@@ -265,12 +277,12 @@ h3 {
 
 .txt-card {
   padding: 0;
-  margin: 3% 0 0 4%;
-  font-size: 15px;
+  margin: 2% 0 0 3%;
+  font-size: 12px;
 }
 
 .txt-card-top {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .in-div-card {
@@ -296,7 +308,7 @@ h3 {
 .img-hebergement-col {
   object-fit: cover;
   width: 100%;
-  height: 65%;
+  height: 100%;
   display: flex;
 }
 .img-hebergement-row {
@@ -332,8 +344,8 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  width: 78%;
-  height: 470px;
+  width: 90%;
+  height: 370px;
 }
 .col-card-bot {
   display: flex;
@@ -353,7 +365,7 @@ h3 {
 }
 .card-bot-full {
   height: 100%;
-  width: 22.5%;
+  width: 25%;
 }
 
 .card-bot-xl {
@@ -394,13 +406,12 @@ h3 {
 footer {
   display: flex;
   width: 100%;
-  height: 150px;
   background-color: #f2f2f2;
   padding-top: 30px;
 }
 
 .sub-main-footer {
-  margin-left: 3%;
+  margin-left: 4%;
   display: flex;
   width: 100%;
 }
@@ -408,7 +419,44 @@ footer {
   margin-right: 4%;
   margin-left: 15%;
 }
+@media only screen and (max-width: 767px) {
+  .sub-main-footer-col{
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .sub-footer{
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
 
+
+/***********************************/
+/* Adapatation screen */
+/**********************************/
+@media only screen and (min-width: 992px) {
+  /* ordinateur */
+}
+@media only screen and (min-width: 768px) and (max-width: 791px) {
+  /* tablette */
+}
+@media only screen and (max-width: 767px) {
+  /* smartphone */
+}
+
+/* QUESTIONS */
+
+@media only screen and (max-width: 767px) {
+  .class {
+  }
+}
+
+.class {
+  @media only screen and (max-width: 767px) {
+  }
+}
 
 /***********************************/
 /* Web-kit pour animations */
