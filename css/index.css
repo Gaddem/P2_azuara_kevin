@@ -2,7 +2,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Raleway", sans-serif;
 }
 nav {
@@ -26,39 +26,74 @@ nav {
 /**********************/
 /* Header */
 /**********************/
-
-.logo {
-  height: 50px;
+@media only screen and (min-width: 768px) {
+  .marg-left-top {
+    margin-left: 4%;
+  }
 }
-.big-title {
-  font-weight: 1000;
+@media only screen and (max-width: 568px) {
+  .marg-left-top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
-.link {
-  display: flex;
-  padding: 1em;
-  color: black;
-  text-decoration: none;
-  border-top: 2px solid transparent;
-  margin-left: 25px;
-  width: 130px;
-  justify-content: center;
-}
-.type-activity {
-  display: flex;
-  flex: 1;
-  justify-content: flex-end;
-  padding-right: 3em;
-}
-
 .link:hover,
 .link:focus {
   border-top: 2px solid #0065fc;
   color: #0065fc;
 }
 
+.logo {
+  height: 38px;
+  padding-top: 10px;
+  padding-left: 14px;
+}
+.big-title {
+  font-weight: 1000;
+  font-size: 17px;
+}
+
+.link {
+  display: flex;
+  /* padding: 1em; */
+  color: black;
+  text-decoration: none;
+  border-top: 2px solid transparent;
+  /* margin-left: 25px; */
+  padding-top: 10px;
+  width: 15%;
+  min-width: 100px;
+  justify-content: center;
+  font-size: 12px;
+  /* padding-right: 20px; */
+}
+.type-activity {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-self: baseline;
+}
+
+@media only screen and (max-width: 568px) {
+  .link {
+    width: 50%;
+  }
+
+  .link:hover,
+  .link:focus {
+    border-bottom: 2px solid #0065fc;
+    border-top: 0px;
+    color: #0065fc;
+  }
+  .type-activity {
+    width: 100%;
+  }
+}
+
 h3 {
   padding: 0;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 2px;
   font-weight: bolder;
 }
@@ -107,7 +142,7 @@ h3 {
 .bloc_icon-search {
   height: 110%;
   background-color: #f2f2f2;
-  width: 36px;
+  min-width: 36px;
   border-top-left-radius: 9px;
   border-bottom-left-radius: 9px;
   display: flex;
@@ -122,15 +157,15 @@ h3 {
   display: inline-flex;
   margin-top: 20px;
   margin-bottom: 10px;
-  width: 95%; 
+  width: 95%;
 }
-@media only screen and (max-width:991px) {
-  .form-filter-col{
+@media only screen and (max-width: 991px) {
+  .form-filter-col {
     flex-direction: column;
   }
-} 
+}
 
-.div-item-filter{
+.div-item-filter {
   gap: 10px;
   align-items: center;
   display: inline-flex;
@@ -172,7 +207,6 @@ h3 {
   width: 41.3px;
   background-color: #deebff;
   margin-right: 10px;
- 
 }
 .title-filter {
   display: flex;
@@ -212,16 +246,18 @@ h3 {
 .top-left-main {
   flex-direction: column;
   display: flex;
-  width: 60%;
+  width: 80%;
   margin-right: 2%;
+  max-width: 800px;
 }
 .top-right-main {
-  width: 22%;
+  width: 35%;
+  max-width: 300px;
 }
 .wrap-flex {
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 19px;
 }
 .wrap-col {
   display: inline-flex;
@@ -231,8 +267,13 @@ h3 {
 
 .div-rad {
   background-color: #f2f2f2;
-  padding: 10px 25px 20px 35px;
   border-radius: 10px;
+}
+.div-rad-right {
+  padding: 10px 20px 20px 20px;
+}
+.div-rad-left {
+  padding: 10px 5px 20px 30px;
 }
 
 .space-title {
@@ -242,8 +283,8 @@ h3 {
 }
 
 .title-top-left {
-  font-size: 18px;
-  margin-bottom: 30px;
+  font-size: 16px;
+  /* margin-bottom: 30px; */
 }
 .card-column {
   width: 100%;
@@ -257,8 +298,8 @@ h3 {
 .card {
   background-color: white;
   display: flex;
-  width: 30%;
-  height: 130px;
+  width: 29%;
+  height: 140px;
   font-size: 12px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
@@ -268,7 +309,7 @@ h3 {
   background-color: white;
   display: flex;
   width: 100%;
-  height: 140px;
+  height: 110px;
   font-size: 8px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
@@ -279,10 +320,12 @@ h3 {
   padding: 0;
   margin: 2% 0 0 3%;
   font-size: 12px;
+  font-weight: 400;
 }
 
 .txt-card-top {
   font-size: 13px;
+  padding-top: 3%;
 }
 
 .in-div-card {
@@ -308,7 +351,7 @@ h3 {
 .img-hebergement-col {
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 60%;
   display: flex;
 }
 .img-hebergement-row {
@@ -345,7 +388,7 @@ h3 {
   align-items: center;
   justify-content: space-between;
   width: 90%;
-  height: 370px;
+  height: 470px;
 }
 .col-card-bot {
   display: flex;
@@ -355,21 +398,13 @@ h3 {
   width: 22.5%;
   height: 100%;
 }
-
-.card-bot {
-  display: flex;
-  background-color: white;
-  flex-direction: column;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.05);
-}
 .card-bot-full {
   height: 100%;
   width: 25%;
 }
 
 .card-bot-xl {
-  height: 57%;
+  height: 50%;
   width: 100%;
 }
 .card-bot-med {
@@ -384,6 +419,13 @@ h3 {
   height: 35%;
   width: 100%;
 }
+.card-bot {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.05);
+}
 
 .txt-card-bot {
   margin: 0;
@@ -393,7 +435,17 @@ h3 {
 .img-card-bot-full {
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 90%;
+  max-height: 90%;
+  display: flex;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.img-card-bot-no-full {
+  object-fit: cover;
+  width: 100%;
+  height: 90%;
+  max-height: 90%;
   display: flex;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -408,6 +460,7 @@ footer {
   width: 100%;
   background-color: #f2f2f2;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .sub-main-footer {
@@ -420,18 +473,18 @@ footer {
   margin-left: 15%;
 }
 @media only screen and (max-width: 767px) {
-  .sub-main-footer-col{
+  .sub-main-footer-col {
     flex-direction: column;
     gap: 20px;
   }
-}
-@media only screen and (max-width: 767px) {
-  .sub-footer{
+  .sub-footer {
     margin-left: 0%;
     margin-right: 0%;
   }
 }
-
+/* @media only screen and (max-width: 767px) {
+  
+  } */
 
 /***********************************/
 /* Adapatation screen */
@@ -444,18 +497,6 @@ footer {
 }
 @media only screen and (max-width: 767px) {
   /* smartphone */
-}
-
-/* QUESTIONS */
-
-@media only screen and (max-width: 767px) {
-  .class {
-  }
-}
-
-.class {
-  @media only screen and (max-width: 767px) {
-  }
 }
 
 /***********************************/
