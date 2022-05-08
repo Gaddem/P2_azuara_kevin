@@ -96,6 +96,8 @@ nav {
 @media only screen and (max-width: 568px) {
   .link {
     width: 50%;
+    border-bottom: 2px solid #F2F2F2;
+    border-top: 0px;
   }
 
   .link:hover,
@@ -240,7 +242,7 @@ h3 {
 }
 .block-info {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   margin-top: 4px;
   margin-bottom: 4px;
 }
@@ -321,7 +323,6 @@ h3 {
     font-weight: 600;
     font-size: 15px;
     z-index: 10;
-    /* background: url(../images/search.png) no-repeat scroll ; */
   }
   .icon-search-loupe{
     width: 62%;
@@ -334,8 +335,6 @@ h3 {
     align-items: flex-start;
     margin-bottom: 20px;
     margin-top: 10px;
-    padding:;
-  /* justify-content: flex-start; */
   }
   .text-info{
     font-size: 13px;
@@ -343,11 +342,7 @@ h3 {
     margin: 0;
   }
 }
-@media only screen and (min-width: 767px) {
-/* .text-info{
-  font-size: 25px;
-} */
-  
+@media only screen and (min-width: 768px) {
   .button-search {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -363,7 +358,6 @@ h3 {
     font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-size: 15px;
-    
   }
   .button-search-loupe{
     display: none;
@@ -470,7 +464,7 @@ h3 {
 
 .txt-card-top {
   font-size: 13px;
-  padding-top: 3%;
+  /* padding-top: 3%; */
 }
 
 .in-div-card {
@@ -497,6 +491,7 @@ h3 {
   object-fit: cover;
   width: 100%;
   height: 60%;
+  min-height: 60%;
   display: flex;
 }
 .img-hebergement-row {
@@ -644,7 +639,7 @@ h3 {
 }
 
 .card-bot-xl {
-  height: 50%;
+  height: 55%;
   width: 100%;
 }
 .card-bot-med {
@@ -652,11 +647,11 @@ h3 {
   width: 100%;
 }
 .card-bot-s {
-  height: 42%;
+  height: 45%;
   width: 100%;
 }
 .card-bot-xs {
-  height: 35%;
+  height: 40%;
   width: 100%;
 }
 .card-bot {
