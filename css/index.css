@@ -39,10 +39,9 @@ nav {
   .marg-left-top {
     margin-left: 4%;
   }
-  
 }
 @media only screen and (max-width: 767px) {
-  .marg-l-h{
+  .marg-l-h {
     margin-left: 0;
     width: 90%;
     margin-left: auto;
@@ -96,7 +95,7 @@ nav {
 @media only screen and (max-width: 568px) {
   .link {
     width: 50%;
-    border-bottom: 2px solid #F2F2F2;
+    border-bottom: 2px solid #f2f2f2;
     border-top: 0px;
   }
 
@@ -180,7 +179,6 @@ h3 {
   width: 95%;
 }
 
-
 .div-item-filter {
   gap: 10px;
   align-items: center;
@@ -255,8 +253,6 @@ h3 {
   .form-filter-col {
     flex-direction: column;
   }
-
-  
 }
 
 @media only screen and (max-width: 767px) {
@@ -270,7 +266,6 @@ h3 {
     border-top: 2px solid #f2f2f2;
     border-bottom: 2px solid #f2f2f2;
     border-radius: 12px;
-
   }
   .bloc_icon-search {
     height: 110%;
@@ -309,9 +304,8 @@ h3 {
     font-size: 15px;
     width: 15%;
     /* margin-right: 10px; */
-    
   }
-  .button-search-loupe{
+  .button-search-loupe {
     border-radius: 12px;
     border: none;
     background-color: #0065fc;
@@ -324,7 +318,7 @@ h3 {
     font-size: 15px;
     z-index: 10;
   }
-  .icon-search-loupe{
+  .icon-search-loupe {
     width: 62%;
     height: 62%;
     object-fit: contain;
@@ -336,7 +330,7 @@ h3 {
     margin-bottom: 20px;
     margin-top: 10px;
   }
-  .text-info{
+  .text-info {
     font-size: 13px;
     padding: 0 0 0 5px;
     margin: 0;
@@ -359,13 +353,10 @@ h3 {
     font-weight: 600;
     font-size: 15px;
   }
-  .button-search-loupe{
+  .button-search-loupe {
     display: none;
   }
-  
 }
-
-
 
 /**********************/
 /* Main */
@@ -464,7 +455,6 @@ h3 {
 
 .txt-card-top {
   font-size: 13px;
-  /* padding-top: 3%; */
 }
 
 .in-div-card {
@@ -517,8 +507,7 @@ h3 {
 }
 
 @media only screen and (max-width: 767px) {
-  
-  .card{
+  .card {
     background-color: white;
     display: flex;
     width: 95%;
@@ -551,14 +540,14 @@ h3 {
     margin-left: auto;
     margin-right: auto;
   }
-  .wrap-flex{
+  .wrap-flex {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 10px;
     align-items: center;
   }
-  .title-top-left-in-div{
+  .title-top-left-in-div {
     width: 90%;
     font-size: 18px;
   }
@@ -623,7 +612,6 @@ h3 {
   width: 90%;
   height: 470px;
 }
-
 
 .col-card-bot {
   display: flex;
@@ -701,7 +689,7 @@ h3 {
 }
 .img-card-bot-full {
   object-fit: cover;
-  overflow:hidden ;
+  overflow: hidden;
   width: 100%;
   height: 90%;
   max-height: 90%;
