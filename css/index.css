@@ -240,7 +240,7 @@ h3 {
 }
 .block-info {
   display: flex;
-  /* align-items: center; */
+  align-items: center;  
   margin-top: 4px;
   margin-bottom: 4px;
 }
