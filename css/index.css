@@ -15,6 +15,12 @@ nav {
 .marg-l-h {
   margin-left: 4%;
 }
+p,
+b,
+a {
+  text-decoration: none;
+  color: black;
+}
 
 .marg-l {
   margin-left: 4%;
@@ -240,7 +246,7 @@ h3 {
 }
 .block-info {
   display: flex;
-  align-items: center;  
+  align-items: center;
   margin-top: 4px;
   margin-bottom: 4px;
 }
